@@ -1,0 +1,16 @@
+{
+	"snapshotSerializers": [
+    "<rootDir>/node_modules/enzyme-to-json/serializer"
+  ],
+	"coveragePathIgnorePatterns": ["<rootDir>/jspm_packages/", "<rootDir>/node_modules"],
+	"collectCoverageFrom": ["src/**/*.js"],
+	"transform": {
+		".*": "./node_modules/babel-jest"
+	},
+	"testRegex": "src/.*\\.test\\.js$",
+	"rootDir": "./",
+	"modulePaths": ["./"],
+	"moduleNameMapper": {
+		"^.+\\.(css|scss)$": "identity-obj-proxy"
+	}
+}

@@ -1,0 +1,15 @@
+exports[`jest training should click 1`] = `
+<div
+  className="wrapper"
+  onClick={[Function]}>
+  Hello It changed
+</div>
+`;
+
+exports[`jest training should render 1`] = `
+<div
+  className="wrapper"
+  onClick={undefined}>
+  Hello It changed
+</div>
+`;
