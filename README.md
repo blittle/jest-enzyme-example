@@ -13,21 +13,28 @@ npm install --save-dev jest babel-jest babel-preset-es2015 babel-preset-react re
 
 ```json
 {
-	"snapshotSerializers": [
-    "<rootDir>/node_modules/enzyme-to-json/serializer"
+  "snapshotSerializers": [
+    "<rootDir>\/node_modules\/enzyme-to-json\/serializer"
   ],
-	"coveragePathIgnorePatterns": ["<rootDir>/jspm_packages/", "<rootDir>/node_modules"],
-	"collectCoverageFrom": ["src/**/*.js"],
-	"transform": {
-		".*": "./node_modules/babel-jest"
-	},
-	"testRegex": "src/.*\\.test\\.js$",
-	"rootDir": "./",
-	"modulePaths": ["./"],
-	"moduleNameMapper": {
-		"^.+\\.(css|scss)$": "identity-obj-proxy",
-    "fetcher!sofe": "<rootDir>/__mocks__/fetcher.mock.js"
-	}
+  "coveragePathIgnorePatterns": [
+    "<rootDir>\/jspm_packages\/",
+    "<rootDir>\/node_modules"
+  ],
+  "collectCoverageFrom": [
+    "src\/**\/*.js"
+  ],
+  "transform": {
+    ".*": ".\/node_modules\/babel-jest"
+  },
+  "testRegex": "src\/.*\\.test\\.js$",
+  "rootDir": ".\/",
+  "modulePaths": [
+    ".\/"
+  ],
+  "moduleNameMapper": {
+    "^.+\\.(css|scss)$": "identity-obj-proxy",
+    "fetcher!sofe": "<rootDir>\/__mocks__\/fetcher.mock.js"
+  }
 }
 ```
 
